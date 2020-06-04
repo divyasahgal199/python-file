@@ -1,0 +1,774 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPhvspjd+2JRpnSPdQkaiVy",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/divyasahgal199/python-file/blob/master/python%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "HQQ30nWyYCrB",
+        "colab_type": "code",
+        "outputId": "fdac8ce2-af50-4e33-a82c-8eeba101795d",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "#  we start with python\n",
+        "print(\"hello world\")"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "hello world\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "3jkt6_ogavJf",
+        "colab_type": "code",
+        "outputId": "41977407-e005-42b4-9181-cbd819c91993",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "# Python3 program to add two numbers \n",
+        "  \n",
+        "num1 = 23\n",
+        "num2 = 12\n",
+        "  \n",
+        "# Adding two numbers\n",
+        "sum = num1 + num2 \n",
+        "  \n",
+        "# print values \n",
+        "print(\"Sum of {0} and {1} is {2}\" .format(num1, num2, sum)) \n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Sum of 23 and 12 is 35\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NzA24GKUD7wC",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "python fuctions\n",
+        "when we talk about fuctions, arguments and parameters\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xE6JQzSHGTYA",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        " def add(a,b):      #here a and b paramets\n",
+        "  c = a+b\n",
+        "  return c"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "AXwuqKkWHdPi",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "e7589089-1d1d-4117-f587-fcb5bce3e9e7"
+      },
+      "source": [
+        "add(2,3)"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "5"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "mp6wUOGFILQA",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "v_FJv8tYINxx",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "def my_sum(*a):\n",
+        "  return sum(a)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "e1ANazeqIWme",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "ecf0467c-669f-4830-9d10-2e3f051e797a"
+      },
+      "source": [
+        "my_sum(1,2,3,4,5,6)"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "21"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "cDKqpDCaHryl",
+        "colab_type": "text"
+      },
+      "source": [
+        "python recieves multiple argument *args and known as variable length argument."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "d8VBjeNvI4jZ",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#  find the average \n",
+        "def mean(*num):\n",
+        "  return (sum(num)/num)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ZgRh3nkaJUQr",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "def mul(*a):\n",
+        "  m = 1\n",
+        "  for i in a:\n",
+        "    m = m*i\n",
+        "  return (m)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pBfuioL9JnlO",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "73cea545-7d54-42c4-811f-758d42a47066"
+      },
+      "source": [
+        "mul(2,3)"
+      ],
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "6"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DbUW20J_LFTW",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# default parameter value\n",
+        "def greet(a, b = \"hello\"):\n",
+        "  return a * \" hello \""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-9_WaKqqLhc-",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "18aa597e-1d03-4a44-dfc7-772b798c426c"
+      },
+      "source": [
+        "greet(5)"
+      ],
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "' hello  hello  hello  hello  hello '"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 34
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-hSQw6IfMP0S",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# default parametervalue\n",
+        "def greet(a,b =\"hello\"):\n",
+        "  return a*b"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "y_BtkNkYMabZ",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "38331ce7-695e-4d71-9fb1-0e79bae5f1da"
+      },
+      "source": [
+        "# default parameter value\n",
+        "greet(2)"
+      ],
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'hellohello'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "VJxU-RZaM1gU",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# passing list as an argument\n",
+        "def my_fun(food):\n",
+        "  for x in food:\n",
+        "    print(x)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nyJ2Sd28OxIE",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# fruits = [\"apple\",\"mango\",\"banana\"]"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "M63it5GSO6_C",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "c62238ca-22eb-4cf7-8300-68b64a883976"
+      },
+      "source": [
+        "my_fun(fruits)"
+      ],
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "apple\n",
+            "mango\n",
+            "banana\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "tVt-D9zRPBsu",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "d4716297-45a2-4849-cc35-261505d02e66"
+      },
+      "source": [
+        "def calculatesum(num):\n",
+        "  if num:\n",
+        "    return num + calculatesum(num-1)\n",
+        "  else:\n",
+        "    return 0\n",
+        "res = calculatesum(10)\n",
+        "print(res)\n"
+      ],
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "55\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "i1Jdg5BqSndK",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#  lamda fuctions\n",
+        "# in python lamda fuctions is cosidered as anonymous fuctions written in a single value\n",
+        "# you can pass n no of arguments but lamda function only return single value.\n",
+        "# lamda fuctions "
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "T1gVKfGfT2b6",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "def cube(x):\n",
+        "  return x*x*x"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "D3rgWdeCUAQQ",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "928ecfe4-c3ee-4b50-a560-3726678af4ff"
+      },
+      "source": [
+        "cube(7)"
+      ],
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "343"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 44
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "6gUSGglMUGff",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "func1 = lambda x : x * x * x "
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xwMUMMYVUb-P",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "e902e883-51a8-415d-d70b-b15555133b95"
+      },
+      "source": [
+        "func1(4)"
+      ],
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "64"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 49
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1yXP6ZqdUh78",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# i want a even numbers from a list.\n",
+        "#  with lambda functions.\n",
+        "# lambd() with filter()\n",
+        "# The filter () in python takes in a fuction and list as argument"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YIzvH2deVKQx",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 180
+        },
+        "outputId": "f1e0ed74-d477-454a-8053-21e9fe51da66"
+      },
+      "source": [
+        "list1 = [5,6,7,8,12,67,89,92]\n",
+        "final_list = list(filter(lambda x: (x%2 !=0),list))"
+      ],
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-54-970795469d6f>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mlist1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0;36m5\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m6\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m7\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m8\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m12\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m67\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m89\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m92\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mfinal_list1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mlist\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfilter\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;32mlambda\u001b[0m \u001b[0mx\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m%\u001b[0m\u001b[0;36m2\u001b[0m \u001b[0;34m!=\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mlist\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'list' object is not callable"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "v8A5iw8dXXnt",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jQlje07jWT5g",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 180
+        },
+        "outputId": "8b27fb5c-4345-4f19-e65e-c05177332277"
+      },
+      "source": [
+        "list1 = [5,6,7,8,12,67,89,92]\n",
+        "final_list = list(filter(lambda x : (x%2 != 0),list1))\n"
+      ],
+      "execution_count": 53,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-53-bdb8b7acecb2>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mlist1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0;36m5\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m6\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m7\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m8\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m12\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m67\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m89\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m92\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mfinal_list\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mlist\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfilter\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;32mlambda\u001b[0m \u001b[0mx\u001b[0m \u001b[0;34m:\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m%\u001b[0m\u001b[0;36m2\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mlist1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'list' object is not callable"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "15cmmptmVCsJ",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 129
+        },
+        "outputId": "3444ee7c-3807-4288-c8bb-f8809966b434"
+      },
+      "source": [
+        "lambda() with map()\n",
+        "list ---0 uske saare elements ko 2 s multiply karna h.\n",
+        "map(fuction,iterable)"
+      ],
+      "execution_count": 55,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-55-a5a947ac95c7>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    lambda() with map()\u001b[0m\n\u001b[0m          ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "IErDbb-OX3jA",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 180
+        },
+        "outputId": "2bf3bf71-185d-43b3-de97-3fa56e97e325"
+      },
+      "source": [
+        "li=[1,4,6,8,9]\n",
+        "list1=list(map(lambda x: x*x, li))\n"
+      ],
+      "execution_count": 56,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-56-644a964438fb>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mli\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m4\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m6\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m8\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m9\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mlist1\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mlist\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmap\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;32mlambda\u001b[0m \u001b[0mx\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mx\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mli\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'list' object is not callable"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Qn5bQYBOYdQR",
+        "colab_type": "text"
+      },
+      "source": [
+        "# New Section"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TxAyyyEbYp-e",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# lambda with reduce()\n",
+        "# the reduce fuction in python takes in a fuction and iterable as an argument. this fuction is design to call with lambda fuction.\n",
+        "# this performs a repetitive operation over the pairs annd returns  a reduced list."
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "4pmGVp3NZU4y",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "from functools import reduce\n",
+        "li = [5,67,89,45,67]\n",
+        "sum1 = reduce((lambda x,y :x + y ), li)\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "C_7pdq4gaCI7",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "761edbb4-b895-42b2-8f79-f03c456a3542"
+      },
+      "source": [
+        "sum1"
+      ],
+      "execution_count": 59,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "273"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 59
+        }
+      ]
+    }
+  ]
+}
